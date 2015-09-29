@@ -5,7 +5,7 @@ div2.innerHTML = div.innerHTML + 'more text';
 
 document.body.appendChild(div2);
 
-for(var i=1; i<=3; i++){
+for(var i=1; i<=5; i++){
    var divs = document.createElement('div');
    divs.innerHTML = i + ' - ' + div.innerHTML;
    document.body.appendChild(divs);
