@@ -1,43 +1,47 @@
 body {
-            background:  #B22222;
-            color:  #FFFFFF;
+            background:  #FFFFFF;
+            color:  #000000;
             font-family: Trebuchet MS, Arial, Times New Roman;
             font-size: 12px;
 }
+
  
 #container {
             background: #FFFFFF;
             margin: 30px auto;
-            width: 900px;
+            width: 100%;
             height: 1000px;
 }
  
 #header {
             background: #838283;
             height: 200px;
-            width: 900px;
+            width: 100%;
             font-size: 20px;
 
 }
  
 #navigation {
             background: #a2a2a2;
-            width: 900px;
+            width: 100%;
             height: 20px;
 }
  
-#menu {
-            background: #808080;
+#menu {     
+             border: 5px solid #d6e9c6;
+            border-radius: 10px;
+            background: #dff0d8;
             float: left;
-            width: 200px;
+            width: 19%;
             height: 600px;
+            font-size: 20px;
 }
  
 #content {
             background: #d2d0d2;
             float: right;
  
-            width: 700px;
+            width: 80%;
             height: 600px;
 }
  
@@ -48,5 +52,5 @@ body {
 #footer {
             background: #838283;
             height: 180px;
-            width: 900px;
+            width: 100%;
 }
