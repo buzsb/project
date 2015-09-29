@@ -1,12 +1,8 @@
-var div = document.getElementById('text');    
 
-var div2 = document.createElement('div');
-div2.innerHTML = div.innerHTML + 'more text';
+var menuSideBar = ['Home', 'Menu', 'Next Page', 'Search'];
 
-document.body.appendChild(div2);
-
-for(var i=1; i<=5; i++){
-   var divs = document.createElement('div');
-   divs.innerHTML = i + ' - ' + div.innerHTML;
-   document.body.appendChild(divs);
-};
+for(var i=0; i<menuSideBar.length; i++){ 
+    var div = document.getElementById('menu');
+    div.innerHTML = i + ' - ' + menuSideBar[i];
+    document.body.appendChild(div);
+}
