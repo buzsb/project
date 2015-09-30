@@ -10,7 +10,7 @@ for(var i=0; i<menuSideBar.length; i++){
     };
 };
 leftMenu();
-var button = document.getElementById('content', 'button');
+var button = document.getElementById('button_html_js');
 button.onclick = function (){
     alert('конопка з НТML + JS');
 }
