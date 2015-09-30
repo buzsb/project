@@ -16,4 +16,13 @@ button.onclick = function (){
 }
 button_html.onclick = function() {
     alert( 'Клик!' );
-  };
+};
+
+menu_navigation.onclick = function(event) {
+  if (event.target.nodeName != 'A') return;
+
+  var href = event.target.getAttribute('href');
+  alert(href);
+
+  return false; // prevent url change
+};

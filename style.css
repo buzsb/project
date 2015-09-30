@@ -24,7 +24,7 @@ body {
 #navigation {
             background: #a2a2a2;
             width: 100%;
-            height: 20px;
+            height: 60px;
 }
  
 #menu {     
@@ -45,6 +45,7 @@ body {
             height: 600px;
 }
 #button_html_js{
+      background: #00BFFF;
       width: 100px;
 }
  
@@ -61,4 +62,29 @@ body {
       background: #00BFFF;
       width: 70px;
       height: 40px;
+}
+.menu li {
+  display: inline-block;
+  margin: 0;
+}
+
+.menu > li a {
+  display: inline-block;
+  margin: 0 2px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  border-radius: .5em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  color: #d9eef7;
+  border: solid 1px #0076a3;
+  background: #0095cd;
+}
+
+.menu > li:hover a {
+  text-decoration: none;
+  background: #007ead;
 }
