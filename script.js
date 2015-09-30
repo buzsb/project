@@ -14,3 +14,6 @@ var button = document.getElementById('button_html_js');
 button.onclick = function (){
     alert('конопка з НТML + JS');
 }
+button_html.onclick = function() {
+    alert( 'Клик!' );
+  };
