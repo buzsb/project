@@ -1,50 +1,37 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <title>Перший сайт</title>
+            <title>Website</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src='script.js' defer></script>
 </head>
  
 <body>
  
-        <div id="container">
-                 <div id="header">Head of website
+    <div id="container">
+        <div id="header">Head of website
+        </div>
  
-                 </div>
+        <div id="navigation">Блок навигации
+        </div>
  
-                        <div id="navigation">Блок навигации
-                        
-                        </div>
+        <div id="menu">Меню
+            <input type='button' id='button' onfocus="this.value = 'Фокус'" onclick="alert('кнопка тільки HTML')" value="HTML" />
+               
+        </div>
  
-                        <div id="menu">Меню
-                         <input type='button' id='button'  onclick="alert('кнопка тільки HTML')" value="HTML" />
-                            <style>
-                            .div{
-
-                                padding: 15px;
-                                border: 10px solid #d6e9c6;
-                                border-radius: 4px;
-                                color: #3c763d;
-                                background-color: #dff0d8;
-                            }</style>
-
-                        </div>
+        <div id="content">Контент
+            <input type="button" id='button_html_js' value="HTML+JS">
+            <input type="button" id='button_html' value="без getElementById">
+            <input id='button_add' value='addEventListener' />
+        </div>
  
-                        <div id="content">Контент
-                          <input type="button" id='button_html_js' value="HTML+JS">
-                          <input type="button" id='button_html' value="без getElementById">
-                          <input id='button_add' value='addEventListener' />
-                        </div>
- 
-                        <div id="clear">
- 
-                        </div>
+        <div id="clear">
+        </div>
                        
-                        <div id="footer">Подвал сайта
- 
-                        </div>
-            </div>
+        <div id="footer">Подвал сайта
+        </div>
+    </div>
  
 </body>
 </html>

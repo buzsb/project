@@ -23,4 +23,12 @@ button_html.onclick = function() {
 
 //добавляє елемент допомогою методу element.addEventListener(event, handler[, phase]); 
 //простий і надійний спосіб створення події для елементів(в даному випадку клік на кнопку і вивід тексту)
-button_add.addEventListener('click' , function(){ alert("addEventlistener") } );
+function handler(){
+    alert('addEventlistener');
+}
+button_add.addEventListener('click' , handler );
+
+//видаляє подію виводу alert після кліку, через певний проміжуток часу
+setTimeout(function(){
+    button_add.removeEventListener('click' , handler);
+}, 10000);
