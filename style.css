@@ -44,13 +44,21 @@ body {
             width: 80%;
             height: 600px;
 }
+#content #button{
+      width: 100px;
+}
  
 #clear {
             clear:both;
 }
- 
 #footer {
             background: #838283;
             height: 180px;
             width: 100%;
+}
+
+#button {
+      background: #00BFFF;
+      width: 70px;
+      height: 40px;
 }
