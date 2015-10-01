@@ -45,6 +45,7 @@ function Menu(elem){
         alert('Поиск');
     };
 
+
     var self = this;
 
     elem.onclick = function(e){
