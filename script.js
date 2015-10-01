@@ -45,7 +45,6 @@ function Menu(elem){
         alert('Поиск');
     };
 
-
     var self = this;
 
     elem.onclick = function(e){
@@ -57,3 +56,33 @@ function Menu(elem){
     };
 }
 new Menu(top_menu);
+
+//приклад роботи алгоритму Drag'n'Drop докладніше на 
+// https://learn.javascript.ru/drag-and-drop#алгоритм-drag-n-drop
+var drag = document.getElementById('drag-button');
+drag.onmousedown = function(e){
+    drag.style.position = 'absolute';
+    moveAt(e);
+    
+    document.body.appendChild(drag);
+ 
+    drag.style.zIndex = 1000;
+
+    function moveAt(e) {
+        drag.style.left = e.pageX - drag.offsetWidth / 2 + 'px';
+        drag.style.top = e.pageY - drag.offsetHeight / 2 + 'px';
+  }
+
+    document.onmousemove = function(e) {
+        moveAt(e);
+    }
+
+    drag.onmouseup = function() {
+        document.onmousemove = null;
+        drag.onmouseup = null;
+  }
+
+    drag.ondragstart = function() {
+        return false;
+    }
+}
