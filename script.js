@@ -32,3 +32,27 @@ button_add.addEventListener('click' , handler );
 setTimeout(function(){
     button_add.removeEventListener('click' , handler);
 }, 10000);
+
+//спосіб "делегирования" - коли використовують один обробник для сожих дій на онотипних елементах
+function Menu(elem){
+    this.save = function(){
+        alert( 'Сохраняю' );
+    };
+    this.load = function(){
+        alert('Загружаю');
+    };
+    this.search = function(){
+        alert('Поиск');
+    };
+
+    var self = this;
+
+    elem.onclick = function(e){
+        var target = e.target;
+        var action = target.getAttribute('data-action');
+        if (action){
+            self[action]();
+        }
+    };
+}
+new Menu(top_menu);
