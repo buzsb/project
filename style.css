@@ -76,3 +76,10 @@ body {
       width: 70px;
       height: 40px;
 }
+.register-field{
+      padding: 5px;
+}
+
+#register-form .register-field:focus {
+      background-color: green;
+}
