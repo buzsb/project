@@ -11,12 +11,17 @@
     <div id="container">
         <div id="header">Head of website
         </div>
- 
+            <div ondblclick="alert('Тест')" onselectstart="return false" onmousedown="return false" style = "font-size: 20px">
+                Подвійний клік виводить "Тест" без виділення тексту
+            </div>
         <div id="navigation">Блок навигации
             <div id='top_menu'>
                 <button data-action='save'>Save</button>
                 <button data-action='load'>Load</button>
                 <button data-action='search'>Search</button>
+                <button data-action= 'githuburl'> 
+                    <a href="https://github.com/buzsb">My profile in GitHub</a>
+                </button>
             </div>
         </div>
  
@@ -26,9 +31,10 @@
         </div>
  
         <div id="content">Контент
-            <input type="button" id='button_html_js' value="HTML+JS">
+            <input type="button" id='button_html_js' value="HTML+JS" />
             <input type="button" id='button_html' value="без getElementById">
-            <input id='button_add' value='addEventListener' />
+            <input type= 'button' id='button_add' value='addEventListener' />
+            <button type="button" id='drag-button'>Drag me</button>
         </div>
  
         <div id="clear">
