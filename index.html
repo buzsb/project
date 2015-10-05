@@ -14,6 +14,11 @@
             <div ondblclick="alert('Тест')" onselectstart="return false" onmousedown="return false" style = "font-size: 20px">
                 Подвійний клік виводить "Тест" без виділення тексту
             </div>
+            <form onsubmit="alert('yea'); return false">
+                <div> <input type='text'>Натисніть клавішу Enter</div>
+                <div> <input type='submit' value="Показати"> Або натисни сюди</div>
+            </form>
+
         <div id="navigation">Блок навигации
             <div id='top_menu'>
                 <button data-action='save'>Save</button>
@@ -43,6 +48,7 @@
                 <div><input class='register-field' type='text' id='email' placeholder='E-mail'> </div>
                 <div><input class='register-field' type='text' id='age' placeholder='Ваш вік'> </div>
             </div>
+            <input type='text' id='input' style="padding: 5px"> те що ви вводите: <span id='result'></span>
         </div>
  
         <div id="clear">

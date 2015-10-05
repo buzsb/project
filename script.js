@@ -110,3 +110,9 @@ age.onfocus = function() {
     error.innerHTML = "";
   }
 };
+
+//подія input яка спрацьовує одразу після зміни значення в полі вводу тексту
+var input = document.getElementById('input');
+input.oninput = function(){
+    document.getElementById('result').innerHTML = input.value;
+} 
