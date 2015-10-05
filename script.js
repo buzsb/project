@@ -116,3 +116,4 @@ var input = document.getElementById('input');
 input.oninput = function(){
     document.getElementById('result').innerHTML = input.value;
 } 
+
