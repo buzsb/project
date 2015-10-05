@@ -85,12 +85,35 @@ drag.onmousedown = function(e){
     drag.ondragstart = function() {
         return false;
     }
-}
+};
 //функція яка виводить повідомлення після повної загрузки сторінки
 window.onload = function() {
     alert('Сторінка повністю завантажилась');
-}
+};
 //функція яка виводить повідомлення коли сторінку закривають або переходять з неї по ссилці на іншу сторінку
 window.onbeforeunload = function(){
     return 'Не закривай цю сторінку BIACH!!!';
-}
+};
+
+//перевіряє чи правильно введене поле з віком
+var age = document.getElementById('age');
+age.onblur = function() {
+    if (isNaN(this.value)) { 
+    this.className = "error";
+    error.innerHTML = 'Помилка! Перевірте чи введені данні правильні'
+  }
+};
+//скидає стан помилки
+age.onfocus = function() {
+  if (this.className == 'error') { 
+    this.className = "";
+    error.innerHTML = "";
+  }
+};
+
+//подія input яка спрацьовує одразу після зміни значення в полі вводу тексту
+var input = document.getElementById('input');
+input.oninput = function(){
+    document.getElementById('result').innerHTML = input.value;
+} 
+

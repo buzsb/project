@@ -29,8 +29,7 @@ body {
  
 #menu {     
 
-             border: 5px solid #d6e9c6;
-            border-radius: 10px;
+            border: 5px solid #d6e9c6;
             background: #dff0d8;
             float: left;
             width: 19%;
@@ -48,7 +47,6 @@ body {
 #content {
             background: #d2d0d2;
             float: right;
-            
             width: 80%;
             height: 600px;
 }
@@ -75,4 +73,11 @@ body {
       background: #00BFFF;
       width: 70px;
       height: 40px;
+}
+.register-field{
+      padding: 5px;
+}
+
+#register-form .register-field:focus {
+      background-color: #ffcc00;
 }
