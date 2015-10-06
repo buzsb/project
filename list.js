@@ -2,9 +2,9 @@ var addItems = function(){
 
      if(!input.value){
         alert('Ви нічого не ввели');
-    }
-    return;
-}
+        return ;
+    };
+
 
     var items = document.getElementById('items');
     var div = document.createElement('div');
@@ -12,4 +12,4 @@ var addItems = function(){
     div.innerHTML = input.value;
     items.appendChild(div);
 
-   
+}
