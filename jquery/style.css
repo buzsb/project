@@ -1,5 +1,5 @@
 #list {
-      height: 500px;
+      height: auto;
       width: 300px;
       margin: 30px;
       border: 3px solid #8AC007;
@@ -11,7 +11,8 @@
 }
 
 .items {
-      
+      margin-left: 5px;
+      text-align: left;
 }
 
 .delete {

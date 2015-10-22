@@ -7,7 +7,9 @@ $(document).ready(function(){
         if( isNaN(num) ){
             alert("Not a Number");
             return;
-        }
+        };
+
+        $("#fizbazz > *").remove();
 
         for(var i=1; i<=num; i++){
             if(i%3==0 && i%5==0){
@@ -24,6 +26,7 @@ $(document).ready(function(){
             }
 
             $("#fizbazz").append(newElement);
+
         };
 
 
