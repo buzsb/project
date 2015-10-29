@@ -33,7 +33,10 @@ $(document).ready(function(){
                 "X-Mashape-Key": "T1UHVGRyPKmshp2Zlc73yNxqvupzp1QNmMTjsnoASaKgZ5qEXE"
             },
 
-
+            success: function(data){
+                var result = JSON.parse(data);
+                $("#result").append(result);
+            }
         });
 
     });
